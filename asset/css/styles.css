@@ -119,3 +119,31 @@ color: var(--primary-color);
  right: calc((100vw - 1110px ) / 2 - 100px);
  bottom: 0;
 }
+/* ===========Header===========*/
+.clints {
+    margin-top: 122px;
+
+}
+.clints .row {
+    display: flex;
+    justify-content: space-between;
+}
+.start {
+    margin-left: auto;
+}
+.clints .desc {
+    color: #7D8589;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+
+}
+.clints .row-desc {
+    margin-top: 23px;
+}
+.clints .images{
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
