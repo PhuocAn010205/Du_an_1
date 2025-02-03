@@ -147,3 +147,38 @@ color: var(--primary-color);
     justify-content: space-between;
     justify-items: center;
 }
+
+/* ===========guides===========*/
+.guides {
+    margin-top: 200px;
+}
+.guides .sub-title{
+    position: relative;
+ color: #000339;
+ text-align: center;
+ font-size: 3.5rem;
+ font-weight: 600;
+ line-height: 35px; /* 100% */
+}
+.guides .sub-title::before {
+    position: absolute;
+    transform: translateX(-50%);
+    top: -10px;
+    left: 50%;
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+.guides .desc {
+    width: 459px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    color: #5A6473;
+    text-align: center;
+font-size: 1.6rem;
+font-weight: 400;
+line-height:1.88; /* 187.5% */
+}
