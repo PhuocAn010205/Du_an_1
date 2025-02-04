@@ -26,7 +26,7 @@ a {
 .btn {
  display: inline-block;
  min-width: 98px;
- border-radius: 8px;
+ border-radius: 12px;
  background: var(--primary-color);
  font-size: 1.4rem;
  font-weight: 500;
@@ -55,7 +55,7 @@ a {
     margin-left: 50px;
 }
 .navbar .actions {
-
+ border-radius: 8px;
  margin-left: auto;
 }
 .navbar ul a {
@@ -178,7 +178,73 @@ color: var(--primary-color);
     margin: 20px auto 0;
     color: #5A6473;
     text-align: center;
-font-size: 1.6rem;
-font-weight: 400;
-line-height:1.88; /* 187.5% */
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height:1.88; /* 187.5% */
+}
+.list-guide {
+    display: flex;
+   margin-top: 70px;
+    justify-content: center;
+    
+}
+.guide-item {
+    margin: 0 70px;
+    text-align: center;
+}
+.guide-item .title{
+    margin-top: 26px;
+    color: #3B3C45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1; /* 110% */
+}
+.guide-item .link {
+    /*  Thẻ a thì không dùng được margin nên cùng dùng display = inline-block*/
+    display: inline-block;
+    margin-top: 10px;
+    color: #0689FF;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.guide-item .arrow {
+    margin-left: 6px;
+}
+.guide-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.guide-cta .btn {
+    min-width: 170px;
+}
+/* ===========Featured Properties===========*/
+.featured {
+    margin-top: 230px;
+}
+.featured .sub-title {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.featured .row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #5A6473;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */ 
+}
+
+.featured .link {
+    display: flex;
+    justify-items: center;
+    color: #0689FF;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.featured .link .arrow {
+    margin-left: 8px;
 }
