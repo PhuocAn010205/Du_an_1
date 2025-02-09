@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./asset/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./asset/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./asset/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./asset/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./asset/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./asset/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./asset/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./asset/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./asset/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./asset/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./asset/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./asset/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./asset/css/reset.css">
     <link rel="stylesheet" href="./asset/fonts/stylesheet.css">
     <link rel="stylesheet" href="./asset/css/styles.css">
@@ -13,20 +30,19 @@
 </head>
 <body>
      <!--Thẻ main chứa bố cục của trang-->
-    <main> 
-        <!--Đầu Trang-->
-           <header class="header">
-                     <div class="content">
-                        <nav class="navbar">
+    
+     <header class="fixed-header">
+        <div class="content">
+                                 <nav class="navbar">
                             <!--gồm có logo-->
-                               <img src="./asset/img/logo.svg" alt="Besnik.">
+                               <a href="#"> <img src="./asset/img/logo.svg" alt="Besnik."></a>
                             <!--Navigation-->
                                   <ul>
-                                    <li><a href="#!">home</a></li>
-                                    <li><a href="#!">Features</a></li>
-                                    <li><a href="#!">Services</a></li>
-                                    <li><a href="#!">Resources</a></li>
-                                    <li><a href="#!">Contact</a></li>
+                                    <li><a href="#">home</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#features">Features</a></li>
+                                    <li><a href="#resources">Resources</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                   </ul>
                             <!--Action-->
                              <div class="actions">
@@ -34,8 +50,12 @@
                                  <a href="#!"class="btn action-btn">Sign up</a>
                              </div>
                         </nav>
-
-                        <div class="hero">
+        </div>
+     </header>
+     <main> 
+        <!--Đầu Trang-->
+           <div class="hero-wrap">
+                     <div class="content">
                             <div class="info">
                                 <p class="sub-title">Welcome to Besnik Agency</p>
                                 <h1 class="title">Discover a place you'll love to live.</h1>
@@ -45,9 +65,8 @@
                                 <a href="#!" class="btn hero-cta">More About Us</a>
                             </div>
                             <img src="./asset/img/hero-img.svg" alt="Discover a place you'll love to live." class="hero-img">
-                        </div>
                      </div>
-           </header>
+           </div>
             <!--Clients-->
             <div class="clints">
                 <div class="content">
@@ -71,17 +90,23 @@
                         <p class="desc">5 Star Ratings (2k+ Review)</p>
                     </div>
                     <div class="images">
-                       <img src="./asset/img/meundies.svg" alt="">
-                       <img src="./asset/img/icon-slack.svg" alt="">
-                       <img src="./asset/img/slack.svg" alt="">
-                       <img src="./asset/img/amazon.svg" alt="">
-                       <img src="./asset/img/woocommerce.svg" alt="">
-                       <img src="./asset/img/sitepoint.svg" alt="">
+                      <a href="#!">
+                          <img src="./asset/img/meundies.svg" alt="">
+                      </a>
+                      <a href="#!">
+                          <img src="./asset/img/slack.svg" alt="">
+                      </a>
+                      <a href="#!">
+                          <img src="./asset/img/woocommerce.svg" alt="">
+                      </a>
+                      <a href="#!">
+                          <img src="./asset/img/sitepoint.svg" alt="">
+                      </a>
                     </div>
                 </div>
             </div>
             <!--Guides-->
-            <div class="guides">
+            <div  id="services" class="guides">
                 <div class="content">
                     <h2 class="sub-title">How its works?</h2>
                     <p class="desc">Everything you need to know when you're looking to buy, rent, or sell - all in one place.</p>
@@ -121,7 +146,7 @@
                 </div>
             </div>
         <!--Featured-->
-        <div class="featured">
+        <div class="featured" id="features">
             <div class="content">
                 <header>
                     <h2 class="sub-title">Featured Properties</h2>
@@ -193,7 +218,7 @@
         </div>
 
         <!--Stats-->
-        <div class="stats">
+        <div id="resources" class="stats">
             <div class="content">
                 <div class="row">
                     <div class="img-block">
@@ -268,7 +293,7 @@
             </div>
         </div>
         <!--Subscription-->
-        <div class="subscription">
+        <div id="contact" class="subscription">
             <div class="content">
                 <div class="body">
                   <div class="info">
@@ -280,7 +305,7 @@
                </div>
         </div>
         </div>
-
+    </main>
         <!--Footer-->
 
         <footer class="footer">
@@ -357,6 +382,5 @@
                 </div>
             </div>
         </footer>
-     </main>
 </body>
 </html>
